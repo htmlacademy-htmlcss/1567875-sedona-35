@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталия Садеева](https://up.htmlacademy.ru/htmlcss/35/user/1567875).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
