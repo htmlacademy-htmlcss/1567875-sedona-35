@@ -177,7 +177,7 @@
             <p class="hotel-price-title">Гостиница</p>
             <p class="hotel-price-item">От 5000 ₽</p>
             <a class="button button-info" href="#">Подробнее</a>
-            <button class="button button-favorites" type="button">В избранном</button>
+            <button class="button button-favorites active-button" type="button">В избранном</button>
             <p class="hotel-star hotel-star-4">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -231,16 +231,16 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-more" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-subscribtion">Только полезная информация и никакого спама,честное бойскаутское!</p>
+      <section class="page-newsletter">
+        <h2 class="title newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="page-newsletter-subscribtion">Только полезная информация и никакого спама,честное бойскаутское!</p>
         <form class="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-mail">Укажите ваш адрес</label>
           <input class="field" type="email" id="newsletter-mail" name="newsletter-email" placeholder="Ваш e-mail">
@@ -249,7 +249,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
@@ -274,7 +274,10 @@
         </ul>
       </section>
       <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru">
+        <img class="footer-html-academy-logo" src="images/logo-footer.svg" width="115" height="33"
+          alt="Логотип HTML-Academy" />
+      </a>
     </footer>
   </body>
 
