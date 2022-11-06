@@ -123,6 +123,8 @@ body {
   margin-left: 20px;
 }
 
+/* main */
+
 .main-index {
   background-color: #ffffff;
 }
@@ -161,6 +163,8 @@ body {
   margin: auto;
   padding-bottom: 25px;
 }
+
+/* преимущества */
 
 .advantages {
   display: flex;
