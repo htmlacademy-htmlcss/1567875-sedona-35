@@ -469,6 +469,7 @@ body {
 
 .hotel-rating {
   text-transform: uppercase;
+  align-self: end;
 }
 
 .active-button {
