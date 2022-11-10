@@ -32,12 +32,13 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-link navigation-link-search" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-link navigation-link-favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Избранное.</span>
+              <span class="favourites-number">12</span>
             </a>
           </li>
         </ul>
@@ -52,7 +53,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <span class="visually-hidden"> Главная </span>
+                <span class="visually-hidden">Главная.</span>
                 <svg
                   width="12"
                   height="12"
@@ -173,28 +174,31 @@
           <h2 class="title catalog-hotels-result-title">
             Найдено гостиниц: 38
           </h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <ul class="buttons-list">
-            <li class="button-item">
-              <button class="button table-icon" type="button">
-                <span class="visually-hidden">Показать карточки.</span>
-              </button>
-            </li>
-            <li class="button-item">
-              <button class="button slideshow-icon" type="button">
-                <span class="visually-hidden">Показать слайд-шоу.</span>
-              </button>
-            </li>
-            <li class="button-item">
-              <button class="button list-icon" type="button">
-                <span class="visually-hidden">Показать список.</span>
-              </button>
-            </li>
-          </ul>
+          <div class="sorting-type">
+            <select class="select-control" aria-label="Сортировка.">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
+
+          <a class="card-grid-current" href="#">
+            <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="card-grid-toggle" href="#">
+
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+              fill="none" viewBox="0 0 16 14">
+              <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+            </svg>
+            <span class="visually-hidden">Показать слайдшоу</span>
+          </a>
+          <a class="card-grid-toggle" href="#">
+            <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+            <span class="visually-hidden">Показать список</span>
+          </a>
+
         </section>
         <section class="catalog-hotels-card">
           <ul class="hotels-list">
@@ -216,7 +220,7 @@
                 В избранном
               </button>
               <p class="hotel-star hotel-star-4">
-                <span class="visually-hidden">4 звезды</span>
+                <span class="visually-hidden">4 звезды.</span>
               </p>
               <p class="hotel-rating">Рейтинг: 8,5</p>
             </li>
@@ -241,7 +245,7 @@
                 В избранном
               </button>
               <p class="hotel-star hotel-star-4">
-                <span class="visually-hidden">4 звезды</span>
+                <span class="visually-hidden">4 звезды.</span>
               </p>
               <p class="hotel-rating">Рейтинг: 9,2</p>
             </li>
@@ -263,7 +267,7 @@
                 В избранном
               </button>
               <p class="hotel-star hotel-star-4">
-                <span class="visually-hidden">3 звезды</span>
+                <span class="visually-hidden">3 звезды.</span>
               </p>
               <p class="hotel-rating">Рейтинг: 6,9</p>
             </li>
@@ -285,14 +289,14 @@
                 В избранном
               </button>
               <p class="hotel-star hotel-star-4">
-                <span class="visually-hidden">2 звезды</span>
+                <span class="visually-hidden">2 звезды.</span>
               </p>
               <p class="hotel-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
         </section>
         <section class="pagination">
-          <h2 class="visually-hidden">Пагинация</h2>
+          <h2 class="visually-hidden">Пагинация.</h2>
           <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -326,7 +330,7 @@
           method="post"
         >
           <label class="visually-hidden" for="newsletter-mail"
-            >Укажите ваш адрес</label
+            >Укажите ваш адрес.</label
           >
           <input
             class="field"
@@ -340,15 +344,16 @@
           </button>
         </form>
       </section>
+    </div>
     </main>
 
     <footer class="main-footer">
       <section class="footer-social">
-        <h2 class="visually-hidden">Соцсети</h2>
+        <h2 class="visually-hidden">Соцсети.</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
+            <a class="footer-social-link" target="_blank" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте.</span>
               <svg
                 width="24"
                 height="14"
@@ -365,7 +370,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://t.me/htmlacademy ">
+            <a class="footer-social-link" target="_blank" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграмм</span>
               <svg
                 width="18"
@@ -382,10 +387,10 @@
           </li>
           <li class="footer-social-item">
             <a
-              class="footer-social-link"
+              class="footer-social-link" target="_blank"
               href="https://www.youtube.com/user/htmlacademyru"
             >
-              <span class="visually-hidden">Ютуб</span>
+              <span class="visually-hidden">Ютуб.</span>
               <svg
                 width="22"
                 height="17"
