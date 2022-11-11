@@ -261,6 +261,8 @@ body {
 
 .advantages-picture {
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-title,
@@ -286,21 +288,23 @@ body {
 .advantages-title::after {
   content: "";
   bottom: -30px;
-  left: 57px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 2px;
   position: absolute;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-title-decoration::after {
   content: "";
   bottom: -30px;
-  left: 57px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 2px;
   position: absolute;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-title-services {
@@ -387,6 +391,9 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .button-newsletter-button {
@@ -515,6 +522,21 @@ body {
   margin-right: 70px;
 }
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.card-grid-item {
+  margin-right: 8px;
+}
+
+.card-grid-item:last-child {
+  margin: 0;
+}
+
 .card-grid-current {
   display: flex;
   align-items: center;
@@ -522,7 +544,6 @@ body {
   padding: 16px 16px;
   border: 2px solid #000000;
   border-radius: 4px;
-  margin-right: 8px;
 }
 
 .card-grid-toggle {
@@ -532,7 +553,6 @@ body {
   padding: 16px 16px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  margin-right: 8px;
 }
 
 .select-control {
@@ -611,6 +631,30 @@ body {
   background: #82b3d3;
   padding: 8px 18px;
   align-self: end;
+}
+
+.hotel-star-4 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  align-self: center;
+  width: 88px;
+  height: 17px;
+}
+
+.hotel-star-3 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  align-self: center;
+  width: 66px;
+  height: 17px;
+}
+
+.hotel-star-2 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  align-self: center;
+  width: 42px;
+  height: 17px;
 }
 
 .hotel-rating {
