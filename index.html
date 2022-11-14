@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
@@ -15,7 +15,8 @@
             src="images/logo.svg"
             width="140"
             height="70"
-            alt="Логотип города Седона.">
+            alt="Логотип города Седона."
+          />
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -52,10 +53,12 @@
         <section class="main-title">
           <h1 class="visually-hidden">Добро пожаловать в город Седона!</h1>
           <img
+            class="main-title-img"
             src="images/welcome.svg"
             width="458"
             height="352"
-            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!.">
+            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!."
+          />
         </section>
         <section class="main-text">
           <h2 class="title city-intro">
@@ -139,6 +142,9 @@
             >
               <div class="advantages-subitem-content">
                 <svg
+                  class="advantages-item-housing"
+                  aria-hidden="true"
+                  focusable="false"
                   width="77"
                   height="72"
                   viewBox="0 0 77 72"
@@ -191,11 +197,10 @@
                   />
                 </svg>
 
-                <h3 class="advantages-subitem-title advantages-title-services">
-                  Жильё
-                </h3>
+                <h3 class="advantages-title-services">Жильё</h3>
                 <p class="advantages-subitem-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить в&nbsp;настоящем мотеле, <br />
+                  всё как в&nbsp;кино!
                 </p>
               </div>
             </li>
@@ -203,6 +208,8 @@
               <div class="advantages-subitem-content">
                 <svg
                   class="advantages-item-food"
+                  aria-hidden="true"
+                  focusable="false"
                   width="76"
                   height="72"
                   fill="none"
@@ -217,18 +224,19 @@
                     fill="#83B3D3"
                   />
                 </svg>
-                <h3 class="advantages-subitem-title advantages-title-services">
-                  Еда
-                </h3>
+                <h3 class="advantages-title-services">Еда</h3>
                 <p class="advantages-subitem-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
+                  Всегда заказывайте <br />
+                  топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
                 </p>
               </div>
             </li>
             <li class="advantages-item background-gray-edge">
               <div class="advantages-subitem-content">
                 <svg
+                  class="advantages-item-souvenirs"
+                  aria-hidden="true"
+                  focusable="false"
                   width="76"
                   height="76"
                   fill="none"
@@ -239,11 +247,10 @@
                     fill="#83B3D3"
                   />
                 </svg>
-                <h3 class="advantages-subitem-title advantages-title-services">
-                  Сувениры
-                </h3>
+                <h3 class="advantages-title-services">Сувениры</h3>
                 <p class="advantages-subitem-description">
-                  Не только китайского, но и настоящего местного производства!
+                  Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного
+                  производства!
                 </p>
               </div>
             </li>
@@ -252,11 +259,11 @@
         <section class="hotel-search">
           <h2 class="title hotel-search-title">Заинтересовались?</h2>
           <p class="hotel-search-form">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки, <br />
+            и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
           </p>
           <a class="button hotel-search-button" href="catalog.html"
-            >Поиск гостиниц в Седоне</a
+            >Поиск гостиницы в Седоне</a
           >
         </section>
         <section class="newsletter">
@@ -292,7 +299,10 @@
         <h2 class="visually-hidden">Соцсети.</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-vk" href="https://vk.com/htmlacademy">
+            <a
+              class="footer-social-link footer-social-vk"
+              href="https://vk.com/htmlacademy"
+            >
               <span class="visually-hidden">ВКонтакте.</span>
               <svg
                 class="footer-social-logo"
@@ -313,7 +323,10 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-telegram" href="https://t.me/htmlacademy ">
+            <a
+              class="footer-social-link footer-social-telegram"
+              href="https://t.me/htmlacademy "
+            >
               <span class="visually-hidden">Телеграмм.</span>
               <svg
                 class="footer-social-logo"
@@ -330,7 +343,7 @@
           </li>
           <li class="footer-social-item">
             <a
-              class="footer-social-youtube"
+              class="footer-social-link footer-social-youtube"
               href="https://www.youtube.com/user/htmlacademyru"
             >
               <span class="visually-hidden">Ютуб.</span>
@@ -371,5 +384,158 @@
         </svg>
       </a>
     </footer>
+    <!-- Модальное окно -->
+    <div class="modal-container">
+      <div class="modal-window">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-button-close" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <form
+          class="block-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <div class="modal-block-select date-select">
+            <label class="modal-block-name"
+              >Дата Заезда:
+              <input
+                class="modal-block-field date-field"
+                type="text"
+                value="27 апреля 2020"
+              />
+            </label>
+            <span class="modal-block-message error-message"
+              >Мы не можем отправить вас в прошлое.</span
+            >
+          </div>
+          <div class="modal-block-select date-select">
+            <label class="modal-block-name"
+              >Дата Выезда:
+              <input
+                class="modal-block-field date-field"
+                type="text"
+                value="1 сентября 2023"
+              />
+            </label>
+            <span class="modal-block-message default-message"
+              >На эти даты есть свободные номера. Пока есть.</span
+            >
+          </div>
+          <div class="modal-block-select people-select">
+            <label class="modal-block-name"
+              >Взрослые:
+              <input
+                class="modal-block-field people-field"
+                type="text"
+                value="2"
+              />
+            </label>
+            <button class="modal-button-field button-min" type="button">
+              <span class="visually-hidden">Уменьшить.</span>
+              <svg
+                class="button-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="#756157"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 9v2h14V9H3Z" />
+              </svg>
+            </button>
+            <button class="modal-button-field button-max" type="button">
+              <span class="visually-hidden">Увеличить.</span>
+              <svg
+                class="button-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="#756157"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-block-select people-select">
+            <label class="modal-block-name"
+              >Дети:
+              <input
+                class="modal-block-field people-field"
+                type="text"
+                value="2"
+              />
+            </label>
+            <span class="tooltip">
+              <button
+                class="tooltip-toggle"
+                type="button"
+                aria-labelledby="tooltip-label-date"
+              >
+                <svg
+                  class="tooltip-icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="#ffffff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </span>
+            <button class="modal-button-field button-min" type="button">
+              <span class="visually-hidden">Уменьшить.</span>
+              <svg
+                class="button-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="#756157"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 9v2h14V9H3Z" />
+              </svg>
+            </button>
+            <button class="modal-button-field button-max" type="button">
+              <span class="visually-hidden">Увеличить.</span>
+              <svg
+                class="button-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="#756157"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="button modal-search-button" type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
