@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -47,7 +47,7 @@
             </a>
           </li>
         </ul>
-        <a class="button button-navigation" href="#">Хочу сюда!</a>
+        <a class="button button-navigation button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -57,26 +57,25 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Главная.</span>
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   width="12"
                   height="12"
-                  fill="none"
+                  fill="CurrentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"
-                    fill="#fff"
                   />
-                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff" />
+                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
                 </svg>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -204,7 +203,7 @@
               </div>
             </fieldset>
             <div class="form-buttons">
-              <button class="button button-submit" type="submit">
+              <button class="button button-submit button-blue" type="submit">
                 Применить
               </button>
               <button class="button button-reset" type="reset">Сбросить</button>
@@ -313,8 +312,8 @@
               </a>
               <p class="hotel-price-title">Гостиница</p>
               <p class="hotel-price-item">От 4000 ₽</p>
-              <a class="button button-info" href="#">Подробнее</a>
-              <button class="button button-favorites" type="button">
+              <a class="button button-info button-brown" href="#">Подробнее</a>
+              <button class="button button-favorites button-blue" type="button">
                 В избранное
               </button>
               <div class="hotel-star hotel-star-4">
@@ -334,7 +333,7 @@
               </a>
               <p class="hotel-price-title">Гостиница</p>
               <p class="hotel-price-item">От 5000 ₽</p>
-              <a class="button button-info" href="#">Подробнее</a>
+              <a class="button button-info button-brown" href="#">Подробнее</a>
               <button
                 class="button button-favorites active-button"
                 type="button"
@@ -358,8 +357,8 @@
               </a>
               <p class="hotel-price-title">Гостиница</p>
               <p class="hotel-price-item">От 2500 ₽</p>
-              <a class="button button-info" href="#">Подробнее</a>
-              <button class="button button-favorites" type="button">
+              <a class="button button-info button-brown" href="#">Подробнее</a>
+              <button class="button button-favorites button-blue" type="button">
                 В избранное
               </button>
               <div class="hotel-star hotel-star-3">
@@ -379,8 +378,8 @@
               </a>
               <p class="hotel-price-title">Гостиница</p>
               <p class="hotel-price-item">От 1500 ₽</p>
-              <a class="button button-info" href="#">Подробнее</a>
-              <button class="button button-favorites" type="button">
+              <a class="button button-info button-brown" href="#">Подробнее</a>
+              <button class="button button-favorites button-blue" type="button">
                 В избранное
               </button>
               <div class="hotel-star hotel-star-2">
@@ -432,8 +431,9 @@
             type="email"
             id="newsletter-mail"
             name="newsletter-email"
-            placeholder="Ваш e-mail">
-          <button class="button-newsletter-button" type="submit">
+            placeholder="Ваш e-mail"
+            required>
+          <button class="button-newsletter-button button-blue" type="submit">
             Подписаться
           </button>
         </form>
