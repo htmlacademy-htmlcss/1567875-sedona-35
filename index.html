@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -43,7 +45,7 @@
             </a>
           </li>
         </ul>
-        <a class="button button-navigation" href="#">Хочу сюда!</a>
+        <a class="button button-navigation button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -133,10 +135,12 @@
                 </p>
               </div>
             </li>
+          </ul>
+            <ul class="advantages-list-grid">
             <li
-              class="advantages-item background-gray-edge advantages-item-icon"
+              class="background-gray-edge advantages-item-icon"
             >
-              <div class="advantages-subitem-content">
+
                 <svg
                   class="advantages-item-housing"
                   aria-hidden="true"
@@ -197,10 +201,8 @@
                   Рекомендуем пожить в&nbsp;настоящем мотеле, <br>
                   всё как в&nbsp;кино!
                 </p>
-              </div>
             </li>
-            <li class="advantages-item">
-              <div class="advantages-subitem-content">
+            <li class="advantages-item-icon">
                 <svg
                   class="advantages-item-food"
                   aria-hidden="true"
@@ -224,10 +226,8 @@
                   Всегда заказывайте <br>
                   топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
                 </p>
-              </div>
             </li>
-            <li class="advantages-item background-gray-edge">
-              <div class="advantages-subitem-content">
+            <li class="advantages-item-icon background-gray-edge">
                 <svg
                   class="advantages-item-souvenirs"
                   aria-hidden="true"
@@ -247,7 +247,6 @@
                   Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного
                   производства!
                 </p>
-              </div>
             </li>
           </ul>
         </section>
@@ -257,7 +256,7 @@
             Укажите предполагаемые даты поездки, <br>
             и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
           </p>
-          <a class="button hotel-search-button" href="catalog.html"
+          <a class="button hotel-search-button button-brown" href="catalog.html"
             >Поиск гостиницы в Седоне</a
           >
         </section>
@@ -278,8 +277,9 @@
               type="email"
               id="newsletter-mail"
               name="newsletter-email"
-              placeholder="Ваш e-mail">
-            <button class="button button-newsletter-button" type="submit">
+              placeholder="Ваш e-mail"
+              required>
+            <button class="button button-newsletter-button button-blue" type="submit">
               Подписаться
             </button>
           </form>
@@ -394,7 +394,9 @@
               <input
                 class="modal-block-field date-field"
                 type="text"
-                value="27 апреля 2020">
+                value="27 апреля 2020"
+                placeholder="Укажите дату"
+                required>
             </label>
             <span class="modal-block-message error-message"
               >Мы не можем отправить вас в прошлое.</span
@@ -406,7 +408,9 @@
               <input
                 class="modal-block-field date-field"
                 type="text"
-                value="1 сентября 2023">
+                value="1 сентября 2023"
+                placeholder="Укажите дату"
+                required>
             </label>
             <span class="modal-block-message default-message"
               >На эти даты есть свободные номера. Пока есть.</span
@@ -418,7 +422,9 @@
               <input
                 class="modal-block-field people-field"
                 type="text"
-                value="2">
+                value="2"
+                placeholder="Количество взрослых"
+                required>
             </label>
             <button class="modal-button-field button-min" type="button">
               <span class="visually-hidden">Уменьшить.</span>
@@ -457,7 +463,9 @@
               <input
                 class="modal-block-field people-field"
                 type="text"
-                value="2">
+                value="2"
+                placeholder="Количество детей"
+                required>
             </label>
             <span class="tooltip">
               <button
