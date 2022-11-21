@@ -368,7 +368,7 @@
           width="115"
           height="34"
           viewBox="0 0 115 34"
-          fill="#000000"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -390,11 +390,13 @@
           method="post"
         >
           <div class="modal-block-select date-select">
-            <label class="modal-block-name">Дата Заезда:
+            <label class="modal-block-name" for="date-in">Дата Заезда:
               <input
                 class="modal-block-field date-field"
                 type="text"
                 value="27 апреля 2020"
+                id="date-in"
+                name="date-in"
                 placeholder="Укажите дату"
                 required>
             </label>
@@ -403,11 +405,13 @@
             >
           </div>
           <div class="modal-block-select date-select">
-            <label class="modal-block-name"
+            <label class="modal-block-name" for="date-out"
               >Дата Выезда:
               <input
                 class="modal-block-field date-field"
                 type="text"
+                id="date-out"
+                name="date-out"
                 value="1 сентября 2023"
                 placeholder="Укажите дату"
                 required>
@@ -417,13 +421,15 @@
             >
           </div>
           <div class="modal-block-select people-select">
-            <label class="modal-block-name"
+            <label class="modal-block-name date-adults" for="adults"
               >Взрослые:
               <input
                 class="modal-block-field people-field"
+                id ="adults"
                 type="text"
+                name="adults"
                 value="2"
-                placeholder="Количество взрослых"
+                placeholder="0"
                 required>
             </label>
             <button class="modal-button-field button-min" type="button">
@@ -458,13 +464,15 @@
             </button>
           </div>
           <div class="modal-block-select people-select">
-            <label class="modal-block-name"
+            <label class="modal-block-name" for="children"
               >Дети:
               <input
                 class="modal-block-field people-field"
+                id ="children"
                 type="text"
+                name="children"
                 value="2"
-                placeholder="Количество детей"
+                placeholder="0"
                 required>
             </label>
             <span class="tooltip">
